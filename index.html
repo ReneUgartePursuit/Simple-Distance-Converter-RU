@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Runner's Distance Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Runner's Distance Converter</h1>
+        <p class="intro">
+            Convert between kilometers and miles for your training runs! <br>
+            Enter a number, select conversion direction, and see your result instantly.
+        </p>
+
+        <div class="converter-box">
+            <div class="input-section">
+                <label for="distance">Distance:</label>
+                <input type="number" id="distance" placeholder="Enter distance" step="any" min="0">
+            </div>
+
+            <div class="conversion-direction">
+                <label for="conversionType">Convert from:</label>
+                <select id="conversionType">
+                    <option value="kmToMi">Kilometers to Miles</option>
+                    <option value="miToKm">Miles to Kilometers</option>
+                </select>
+            </div>
+
+            <button id="convertBtn">Convert</button>
+
+            <div class="result-container">
+                <h2>Result:</h2>
+                <p id="result">-</p>
+                <p id="explanation" class="explanation"></p>
+            </div>
+        </div>
+
+        <div class="running-facts">
+            <h3>Did you know?</h3>
+            <p>A marathon is 42.195 kilometers or 26.219 miles!</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
